@@ -9,37 +9,33 @@
   text-align: "center";
   background-color: "var(--primary-color)";
 }
+.tabs{
+  display: flex;
+  justify-content: flex-start;
+}
 
-.button {
-  margin: 3vw;
-  margin-top: 20px;
-  padding: 1vw;
-  border: 5px solid var(--button-bord-color);
-  text-decoration: none;
-  /* border-radius: 10px; */
+@import url('https://fonts.googleapis.com/css?family=PermanentMarker&display=swap');
+.activeButton {
   cursor: pointer;
-  background-color: var(--primary-color);
-  box-shadow: 0 3px 1px 0px var(--second-color);
+  
+  
   color: var(--background-color);
-  border-radius: 2px;
+  background: #D9D9D9;
+  
+  /* text settings */
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.25);
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  font-family: 'Permanent Marker';
+font-style: normal;
+font-weight: 400;
+line-height: 52px;
+
+color: #000000;
 }
 
-.natekester {
-  color: var(--dark-primary-color);
-  margin-top: 0;
-  padding-top: 60px;
-  /* padding-left: 30px; */
-  text-shadow: 0 0 1px var(--dark-fifth-color), 0 0 1px var(--dark-fifth-color),
-    0 0 1px var(--dark-fifth-color), 0 0 1px var(--dark-fifth-color),
-    0 0 1px var(--dark-fifth-color), 0 0 1px var(--dark-fifth-color),
-    0 0 1px var(--dark-fifth-color), 0 0 1px var(--dark-fifth-color),
-    0 0 1px var(--dark-fifth-color), 0 0 1px var(--dark-fifth-color),
-    0 0 1px var(--dark-fifth-color), 0 0 1px var(--dark-fifth-color),
-    0 0 1px var(--dark-fifth-color), 0 0 1px var(--dark-fifth-color),
-    0 0 1px var(--dark-fifth-color), 0 0 1px var(--dark-fifth-color),
-    0 0 1px var(--dark-fifth-color), 0 0 1px var(--dark-fifth-color),
-    0 0 1px var(--dark-fifth-color), 0 0 1px var(--dark-fifth-color);
-}
 
 .title {
   /* font-family:garamond,serif; */
@@ -47,42 +43,5 @@
 
   padding-bottom: 30px;
   padding-left: 30px;
-  text-shadow: 0 0 1px var(--dark-fifth-color), 0 0 1px var(--dark-fifth-color),
-    0 0 1px var(--dark-fifth-color), 0 0 1px var(--dark-fifth-color),
-    0 0 1px var(--dark-fifth-color), 0 0 1px var(--dark-fifth-color),
-    0 0 1px var(--dark-fifth-color), 0 0 1px var(--dark-fifth-color),
-    0 0 1px var(--dark-fifth-color), 0 0 1px var(--dark-fifth-color),
-    0 0 1px var(--dark-fifth-color), 0 0 1px var(--dark-fifth-color),
-    0 0 1px var(--dark-fifth-color), 0 0 1px var(--dark-fifth-color),
-    0 0 1px var(--dark-fifth-color), 0 0 1px var(--dark-fifth-color),
-    0 0 1px var(--dark-fifth-color), 0 0 1px var(--dark-fifth-color),
-    0 0 1px var(--dark-fifth-color), 0 0 1px var(--dark-fifth-color);
-}
-.myFace {
-  align-self: center;
-  height: 255px;
-  width: auto;
-  padding-left: 30px;
-  margin-top: 0px;
-  padding-top: 0px;
 }
 
-@media only screen and (min-width: 500px) {
-  .myFace {
-    height: 255px;
-    width: auto;
-    padding-left: 30px;
-    margin-top: 10vh;
-    padding-top: 0px;
-  }
-}
-
-@media only screen and (max-width: 499px) {
-  .myFace {
-    height: 200px;
-    width: auto;
-    padding-left: 30px;
-    margin-top: 10vh;
-    padding-top: 0px;
-  }
-}

@@ -6,14 +6,15 @@ function Header() {
   return (
     <div className={styles.header}>
 
-      <h1 className={styles.natekester} >Nate Kester</h1>
-      <h5 className={styles.title}>I am an Engineer who believes in a culture of quality</h5>
+      <h1 className={styles.title} >Nate Kester</h1>
+      <h2 className={styles.title}>Full Stack Engineer</h2>
 
-      <nav>
-        <Link className={styles.button} to="/experience">Professional Experience</Link>
-        <Link className={styles.button} to="/philosophy">Professional Philosophy</Link>
-        <Link className={styles.button} to="/personal">Personal</Link>
-       </nav>
+      <div className={styles.tabs}>
+        <Link className={styles.activeButton} to="/about-me">About Me</Link>
+        <Link className={styles.activeButton} to="/career">Career</Link>
+        <Link className={styles.activeButton} to="/education">Education</Link>
+        <Link className={styles.activeButton} to="/Projects">Projects</Link>
+      </div>
     </div>
   );
 }

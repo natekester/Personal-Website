@@ -7,8 +7,8 @@ import TricksyHobbits from './404/TricksyHobbitses';
 function App (){
   return (
     <div className={styles.app}>
+      <Header />
       <Router>
-        <Header path="/" />
         <TricksyHobbits path='*' />
       </Router>
     </div>

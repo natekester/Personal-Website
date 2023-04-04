@@ -1,5 +1,5 @@
 import styles from "./TricksyHobbitses.module.css"
-import { Router, Link } from "@reach/router"
+import {  Link } from "@reach/router"
 
 function TricksyHobbits() {
   return (

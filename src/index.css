@@ -1,24 +1,12 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-head {
-  background-color: var(--primary-color);
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import"https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap";@import"https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap";*,:before,:after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb
 }
 
 :root{
 --background-color: #4f374f;
---background-photo: "https://i.imgur.com/l7h2nVl.jpg";
 --primary-color: rgb(241, 241, 241);
 --second-color: #ababab;
 --third-color:#584257 ;
@@ -26,7 +14,5 @@ code {
 --fifth-color:  rgba(0, 0, 0, 0.438);
 --sixth-color: rgba(0, 0, 0, 0.438);
 --button-colors:rgb(97, 196, 81);
---button-bord-color: $button-colors;
---button-text-color: $button-colors;
 --box-shadow: rgba(0, 0, 0, 0.438);
 }
