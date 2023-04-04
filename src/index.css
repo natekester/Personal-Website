@@ -7,7 +7,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+head {
+  background-color: var(--primary-color);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:root{
+--background-color: #4f374f;
+--background-photo: "https://i.imgur.com/l7h2nVl.jpg";
+--primary-color: rgb(241, 241, 241);
+--second-color: #ababab;
+--third-color:#584257 ;
+--fourth-color: rgba(0, 0, 0, 0.534);
+--fifth-color:  rgba(0, 0, 0, 0.438);
+--sixth-color: rgba(0, 0, 0, 0.438);
+--button-colors:rgb(97, 196, 81);
+--button-bord-color: $button-colors;
+--button-text-color: $button-colors;
+--box-shadow: rgba(0, 0, 0, 0.438);
 }
