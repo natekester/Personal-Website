@@ -1,13 +1,9 @@
 import styles from './AboutMe.module.css';
 import { NavLink } from 'react-router-dom';
 import React from 'react';
-import Header from '../Header/Header';
 
 function AboutMe() {
   return (
-    <>
-      <Header />
-
       <div className={styles.header}>
         <h1> Hi Im Nate</h1>
         <nav>
@@ -16,7 +12,6 @@ function AboutMe() {
           </NavLink>
         </nav>
       </div>
-    </>
   );
 }
 
