@@ -5,10 +5,19 @@
   border-color: #e5e7eb
 }
 
+body{
+  margin: 0;
+}
+
 :root{
+  display: flex;
 --background-color: #4f374f;
---primary-color: rgb(241, 241, 241);
+--primary-color:#d9d9d9;
+--black-text-color:  #000000;
+--light-text-color:  #eeeeee;
+
 --second-color: #ababab;
+--stroke-color: rgba(0, 0, 0, 0.25);
 --third-color:#584257 ;
 --fourth-color: rgba(0, 0, 0, 0.534);
 --fifth-color:  rgba(0, 0, 0, 0.438);
