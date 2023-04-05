@@ -1,15 +1,17 @@
 import React from 'react';
-import Header from './Header/Header';
-import { Router } from '@reach/router';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import styles from './App.module.css';
 import TricksyHobbits from './404/TricksyHobbitses';
+import AboutMe from './AboutMe/AboutMe';
+import Header from './Header/Header';
 
 function App() {
   return (
     <div className={styles.app}>
-      <Header />
+      {/* <Header /> */}
       <Router>
-        <TricksyHobbits path="*" />
+        <AboutMe path="about-me" />
+        {/* <TricksyHobbits path="*" /> */}
       </Router>
     </div>
   );

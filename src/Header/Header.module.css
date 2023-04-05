@@ -26,7 +26,24 @@
   height: 3em;
 }
 
-.activeButton {
+.activeTab{
+  text-decoration: none;
+  cursor: pointer;
+  background: var(--active-tab-color);
+  
+  /* text settings */
+  box-shadow: inset 0px 1px 1px var(--stroke-color);
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  
+  font-family: "Permanent Marker";
+  
+  text-align: center;
+  color: var(--light-text-color);
+}
+
+.tab{
   text-decoration: none;
   cursor: pointer;
   background: var(--primary-color);
@@ -40,9 +57,7 @@
   font-family: "Permanent Marker";
 
   text-align: center;
-
   color: var(--black-text-color);
-  
 }
 
 .nate {
