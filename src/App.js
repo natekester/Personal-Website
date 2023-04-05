@@ -1,19 +1,18 @@
 import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
 import styles from './App.module.css';
 import TricksyHobbits from './404/TricksyHobbitses';
 import AboutMe from './AboutMe/AboutMe';
 import Header from './Header/Header';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className={styles.app}>
-      {/* <Header /> */}
-      <Router>
-        <AboutMe path="about-me" />
-        {/* <TricksyHobbits path="*" /> */}
-      </Router>
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path="/about-me" element={<AboutMe />} />
+        <Route exact path="*" element={<TricksyHobbits />} />
+      </Routes>
+    </Router>
   );
 }
 

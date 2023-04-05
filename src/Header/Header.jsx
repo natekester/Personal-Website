@@ -16,7 +16,9 @@ function Header() {
         <h2 className={styles.title}>Full Stack Engineer</h2>
         <nav className={styles.tabs}>
           <NavLink
-            className={(isActive) => (isActive.isActive ? styles.activeTab : styles.tab)}
+            className={(isActive) =>{ 
+              console.log(11111,isActive)
+              return (isActive.isActive? styles.activeTab : styles.tab)}}
             to="/about-me"
           >
             About Me
@@ -28,13 +30,13 @@ function Header() {
             Career
           </NavLink>
           <NavLink
-            className={(isActive) => (isActive.isActive ? styles.activeTab : styles.tab)}
+            className={(isActive) => (isActive.isActive? styles.activeTab : styles.tab)}
             to="/education"
           >
             Education
           </NavLink>
           <NavLink
-            className={(isActive) => (isActive.isActive ? styles.activeTab : styles.tab)}
+            className={(isActive) => (isActive.isActive? styles.activeTab : styles.tab)}
             to="/projects"
           >
             Projects
