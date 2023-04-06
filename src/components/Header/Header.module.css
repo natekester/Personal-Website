@@ -10,11 +10,7 @@
   background-size:cover;
 
 }
-@media (max-width: 381px) {
-  .header{
-    width: auto;
-  }
-}
+
 .flexboxContainer{
   display: flex;
   flex-direction: column;
@@ -124,4 +120,13 @@
    1px -1px 0 var(--stroke-color),
    -1px 1px 0 var(--stroke-color),
     1px 1px 0 var(--stroke-color);
+}
+@media (max-width: 550px) {
+  .header{
+    width: auto;
+  }
+
+  .tabs{
+    font-size: small;
+  }
 }

@@ -11,7 +11,10 @@ function AboutMe() {
         alt="A picture of what I look like. "
       />
       <div className={styles.textContainer}>
-        <Title title="Hi! I'm Nate" />
+        <div className={styles.titleContainer}>
+          <Title title="Hi! I'm Nate" />
+          <img className={styles.awsLogo} src="AWS-cloud-logo.png" alt="AWS CCP cert logo" />
+        </div>
         <h4 className={styles.text}>
           {' '}
           I am a Full Stack Software Engineer at Pluralsight. I started out my
