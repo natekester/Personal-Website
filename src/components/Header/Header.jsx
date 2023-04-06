@@ -8,6 +8,8 @@ function Header() {
       <div className={styles.flexboxContainer}>
         <h1 className={styles.nate}>Nate Kester</h1>
         <h2 className={styles.title}>Full Stack Engineer</h2>
+        <a className={styles.email} href="mailto:nate.d.kester@gmail.com">nate.d.kester@gmail.com</a>
+        
         <nav className={styles.tabs}>
           <NavLink
             className={(isActive) =>

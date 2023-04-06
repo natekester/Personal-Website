@@ -1,8 +1,8 @@
 import React from 'react';
-import TricksyHobbits from './404/TricksyHobbitses';
-import AboutMe from './AboutMe/AboutMe';
+import TricksyHobbits from './components/404/TricksyHobbitses';
+import AboutMe from './components/AboutMe/AboutMe';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './Header/Header';
+import Header from './components/Header/Header';
 
 function App() {
   return (

@@ -1,0 +1,51 @@
+.aboutMe{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    width:fit-content;
+    align-items: center;
+    justify-content: center;
+
+    /* padding-left: 10vw; */
+    /* padding-right: 10vw; */
+}
+
+.text{
+    margin-right: 5vw;
+}
+
+.myFace{
+    display: block;
+    
+    width: auto;  
+    
+    margin: auto;
+    height: 25vh;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 3;
+}
+
+.textContainer{
+    flex-grow: 30vw;
+}
+
+.expandable{
+    flex-grow: 10vw;
+}
+
+
+@media (max-width: 550px) {
+    .aboutMe{
+        flex-direction: column;
+
+}}
+
+@media (min-width: 1180px) {
+    .text{
+        margin-right: 20vw;
+    }
+    .myFace{
+        margin-left: 15vw;
+    }
+}
