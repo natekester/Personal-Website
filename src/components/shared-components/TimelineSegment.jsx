@@ -9,7 +9,7 @@ function TimelineSegment({ time, imageElement, title, description }) {
         <h5 className={styles.time}>{time}</h5>
         <div className={styles.imageContainer}>{imageElement}</div>
       </div>
-      <div className={styles.dot} />
+      <span className={styles.dot} />
       <div className={styles.textContainer}>
         <h2 className={styles.title}>{title}</h2>
         <h4 className={styles.title}>{description}</h4>

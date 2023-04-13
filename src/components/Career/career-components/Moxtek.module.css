@@ -1,0 +1,12 @@
+.moxtekImg {
+  width: 15vw;
+  padding: 1vw;
+  max-width: 150px;
+}
+
+@media (max-width: 550px) {
+  .moxtekImg {
+    width: 30vw;
+    max-width: 150px;
+  }
+}

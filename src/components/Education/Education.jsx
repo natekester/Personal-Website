@@ -1,17 +1,22 @@
 import TimelineSegment from '../shared-components/TimelineSegment';
 
 import React from 'react';
+import Title from '../shared-components/Title';
+import UofU from './education-components/UofU';
+import AWS from './education-components/AWS';
+import CS50 from './education-components/CS50';
+import UCSD from './education-components/UCSD';
 
 function Education() {
-  const image = './NK.png';
-  const pluralsightDesc =
-    'My team has created tooling to provide an entirely custom assessment experience. I have had the opportunity to train every member of my team, implement new documentation practices, testing patterns, and push sustainable clean code practices.';
   return (
-    <TimelineSegment
-      image={image}
-      title="Software Engineer - Pluralsight"
-      description={pluralsightDesc}
-    ></TimelineSegment>
+    <div className={styles.Education}>
+      <Title title="University of Utah" />
+      <UofU />
+      <Title title="Software Certification" />
+      <AWS />
+      <CS50 />
+      <UCSD />
+    </div>
   );
 }
 
