@@ -13,17 +13,21 @@ function AboutMe() {
       <div className={styles.textContainer}>
         <div className={styles.titleContainer}>
           <Title title="Hi! I'm Nate" />
-          <img className={styles.awsLogo} src="AWS-cloud-logo.png" alt="AWS CCP cert logo" />
+          <img
+            className={styles.awsLogo}
+            src="AWS-cloud-logo.png"
+            alt="AWS CCP cert logo"
+          />
         </div>
         <h4 className={styles.text}>
           {' '}
           I am a Full Stack Software Engineer at Pluralsight. I started out my
           Engineering in Manufacturing, utilizing code to solve manufacturing
           problems. I transitioned to Software Engineering in Tech, and have
-          loved every moment of it, carrying over all the quality lessons. I
-          work mainly in Python and Javascript, but I believe in using the right
-          tool for the job. Backend Code is my passion, but I believe in being
-          well rounded.
+          loved every moment of it, carrying over all the quality assurance
+          lessons. I work mainly in Python and Javascript (React/Node), but I
+          believe in using the right tool for the job. Backend Code is my
+          passion, but I believe in being well rounded.
         </h4>
         <h4 className={styles.text}>
           As for hobbies - I love 3D printing, photography, and have recently

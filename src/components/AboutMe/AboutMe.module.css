@@ -1,73 +1,63 @@
-.aboutMe{
-    display: flex;
-    flex-grow: 1;
-    flex-direction: row;
-    width:fit-content;
-    align-items: center;
-    justify-content: center;
-
-    /* padding-left: 10vw; */
-    /* padding-right: 10vw; */
+.aboutMe {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
 }
 
-.titleContainer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5vw;
-    /* justify-content: space-around; */
+.titleContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5vw;
 }
-.awsLogo{
-    height: 10vh;
-}
-
-.text{
-    margin-right: 5vw;
+.awsLogo {
+  height: 10vh;
 }
 
-.myFace{
-    display: block;
-    
-    width: auto;  
-    
-    margin: auto;
-    height: 25vh;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
+.text {
+  margin-right: 5vw;
 }
 
-.textContainer{
-    flex-grow: 30vw;
+.myFace {
+  display: block;
+
+  width: auto;
+
+  margin: auto;
+  height: 25vh;
+  align-items: center;
+  justify-content: center;
 }
 
-.expandable{
-    flex-grow: 10vw;
+.textContainer {
 }
 
+.expandable {
+}
 
 @media (max-width: 550px) {
-    .aboutMe{
-        flex-direction: column;
-}
-.titleContainer{
+  .aboutMe {
+    flex-direction: column;
+  }
+  .titleContainer {
     justify-content: space-around;
-}
-.textContainer{
+  }
+  .textContainer {
     margin-left: 1rem;
-
-}
-.myFace{
+  }
+  .myFace {
     height: 10vh;
-}
+  }
 }
 
 @media (min-width: 1180px) {
-    .myFace{
-        margin-left: 15vw;
-    }
-    .text{
-        margin-right: 20vw;
-    }
-
+  .myFace {
+    margin-left: 15vw;
+  }
+  .text {
+    margin-right: 20vw;
+  }
 }
