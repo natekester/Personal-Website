@@ -8,9 +8,10 @@ function Projects() {
       <Title title="This Web Page!" />
       <h4 className={styles.text}>
         {' '}
-        I made this page in React, and hosting it in AWS. As I add to it, you’ll
-        see more. I plan to have this connected to a server-less backend for an
-        api gateway and lambda just as a simple proof of backend knowledge.{' '}
+        I made this page in React after creating a Figma for it. I am hosting
+        this site on AWS. As I add to it, you’ll see more. I plan to have this
+        connected to a server-less backend for an api gateway and lambda just as
+        a simple proof of backend knowledge.{' '}
       </h4>
       <Title title="CS50 Course Capstone" />
       <h4 className={styles.text}>
