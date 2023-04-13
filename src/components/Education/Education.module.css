@@ -3,3 +3,8 @@ h1 {
   margin-top: 2vh;
   margin-bottom: 0;
 }
+.Education {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+}

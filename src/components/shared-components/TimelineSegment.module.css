@@ -9,7 +9,7 @@
   flex-direction: row;
   /* width: fit-content; */
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .textContainer {
