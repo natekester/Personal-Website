@@ -4,7 +4,11 @@ import React from 'react';
 
 function AWS() {
   const AWSCert = (
-    <img className={styles.hexcelImg} src="hexcel.png" alt="Hexcel Logo" />
+    <img
+      className={styles.awsImg}
+      src="AWS-cloud-logo-white.png"
+      alt="aws cloud practitioner cert"
+    />
   );
 
   const AWSDesc =

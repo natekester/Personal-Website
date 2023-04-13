@@ -4,7 +4,7 @@ import React from 'react';
 
 function CS50() {
   const harvardLogo = (
-    <img className={styles.hexcelImg} src="hexcel.png" alt="Hexcel Logo" />
+    <img className={styles.harvardImg} src="harvard.png" alt="Harvard Logo" />
   );
 
   const cs50Desc =

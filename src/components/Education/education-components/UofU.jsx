@@ -4,10 +4,11 @@ import React from 'react';
 
 function UofU() {
   const UofULogo = (
-    <img className={styles.hexcelImg} src="hexcel.png" alt="Hexcel Logo" />
+    <img className={styles.uofuImg} src="uofu.png" alt="UofU logo" />
   );
 
-  const UofUDesc = '';
+  const UofUDesc =
+    'Provided me a great educational base for technical writing, Math, and Engineering practices';
 
   return (
     <TimelineSegment

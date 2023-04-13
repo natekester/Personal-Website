@@ -4,7 +4,7 @@ import React from 'react';
 
 function UCSD() {
   const UCSDLogo = (
-    <img className={styles.hexcelImg} src="hexcel.png" alt="Hexcel Logo" />
+    <img className={styles.ucsdImg} src="ucsd.png" alt="ucsd logo" />
   );
 
   const UCSDDesc =
