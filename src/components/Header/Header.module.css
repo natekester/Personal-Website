@@ -1,5 +1,5 @@
 .header {
-  background-image: url("../../images/enchantments.png") ;
+  background-image: url('./images/enchantments.png');
 
   width: 100vw;
   height: auto;
@@ -7,15 +7,13 @@
 
   background-position: center;
   background-repeat: no-repeat;
-  background-size:cover;
-
+  background-size: cover;
 }
 
-.flexboxContainer{
+.flexboxContainer {
   display: flex;
   flex-direction: column;
-  justify-content:  flex-end;
-
+  justify-content: flex-end;
 }
 
 .tabs {
@@ -24,30 +22,27 @@
   height: 3em;
 }
 
-.activeTab{
+.activeTab {
   text-decoration: none;
   cursor: pointer;
   background: var(--active-tab-color);
-  
+
   /* text settings */
   box-shadow: inset 0px 1px 1px var(--stroke-color);
   padding: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  
-  font-family: "Permanent Marker";
-  
+
+  font-family: 'Permanent Marker';
+
   text-align: center;
   color: var(--light-text-color);
 
-  text-shadow:
-  -1px -1px 0 var(--stroke-color),  
-   1px -1px 0 var(--stroke-color),
-   -1px 1px 0 var(--stroke-color),
-    1px 1px 0 var(--stroke-color);
+  text-shadow: -1px -1px 0 var(--stroke-color), 1px -1px 0 var(--stroke-color),
+    -1px 1px 0 var(--stroke-color), 1px 1px 0 var(--stroke-color);
 }
 
-.tab{
+.tab {
   text-decoration: none;
   cursor: pointer;
   background: var(--primary-color);
@@ -58,7 +53,7 @@
   padding-left: 1rem;
   padding-right: 1rem;
 
-  font-family: "Permanent Marker";
+  font-family: 'Permanent Marker';
 
   text-align: center;
   color: var(--black-text-color);
@@ -66,7 +61,7 @@
 }
 
 .nate {
-  font-family: "Permanent Marker";
+  font-family: 'Permanent Marker';
   font-style: normal;
   font-weight: 400;
   color: var(--light-text-color);
@@ -74,59 +69,50 @@
   margin-left: 2vw;
   margin-top: 8vh;
 
-  text-shadow:
-  -1px -1px 0 var(--stroke-color),  
-   1px -1px 0 var(--stroke-color),
-   -1px 1px 0 var(--stroke-color),
-    1px 1px 0 var(--stroke-color);
+  text-shadow: -1px -1px 0 var(--stroke-color), 1px -1px 0 var(--stroke-color),
+    -1px 1px 0 var(--stroke-color), 1px 1px 0 var(--stroke-color);
 }
 
 .title {
-  font-family: "Permanent Marker";
+  font-family: 'Permanent Marker';
   font-style: normal;
   font-weight: 400;
   color: var(--light-text-color);
   margin: 0;
   margin-left: 2vw;
 
-  text-shadow:
-  -1px -1px 0 var(--stroke-color),  
-   1px -1px 0 var(--stroke-color),
-   -1px 1px 0 var(--stroke-color),
-    1px 1px 0 var(--stroke-color);
+  text-shadow: -1px -1px 0 var(--stroke-color), 1px -1px 0 var(--stroke-color),
+    -1px 1px 0 var(--stroke-color), 1px 1px 0 var(--stroke-color);
 }
 
-.email{
+.email {
   font-family: Work Sans, sans-serif;
   text-decoration: none;
   font-style: normal;
   font-size: x-small;
   font-weight: 100;
   color: var(--light-text-color);
-  
+
   margin: 0;
   margin-left: 2vw;
   margin-right: 2vw;
   margin-bottom: 0.5vh;
-  padding:4px;
+  padding: 4px;
   padding-top: 2px;
   padding-bottom: 2px;
   background: var(--linkedin-color);
   width: fit-content;
   border-radius: 5px;
 
-  text-shadow:
-  -1px -1px 0 var(--stroke-color),  
-   1px -1px 0 var(--stroke-color),
-   -1px 1px 0 var(--stroke-color),
-    1px 1px 0 var(--stroke-color);
+  text-shadow: -1px -1px 0 var(--stroke-color), 1px -1px 0 var(--stroke-color),
+    -1px 1px 0 var(--stroke-color), 1px 1px 0 var(--stroke-color);
 }
 @media (max-width: 550px) {
-  .header{
+  .header {
     width: auto;
   }
 
-  .tabs{
+  .tabs {
     font-size: small;
   }
 }

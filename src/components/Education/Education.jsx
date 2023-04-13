@@ -9,9 +9,9 @@ import styles from './Education.module.css';
 function Education() {
   return (
     <div className={styles.Education}>
-      <Title className={styles.title1} title="University of Utah" />
+      <Title title="University of Utah" />
       <UofU />
-      <Title className={styles.title} title="Software Certification" />
+      <Title title="Software Certification" />
       <AWS />
       <CS50 />
       <UCSD />
