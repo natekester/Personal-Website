@@ -1,33 +1,43 @@
-@import"https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap";@import"https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap";*,:before,:after {
+@import 'https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap';
+*,
+:before,
+:after {
   box-sizing: border-box;
   border-width: 0;
   border-style: solid;
-  border-color: #e5e7eb
+  border-color: #e5e7eb;
 }
 
-html, body, #root{
+html,
+body,
+#root {
   height: 100%;
-  margin:0;
+  margin: 0;
   display: flex;
-  flex-flow:column;
+  flex-flow: column;
 }
 
-:root{
-  background-color: #2C2B2B;
+h4 {
+  font-weight: 500;
+}
+
+:root {
+  background-color: #2c2b2b;
   font-family: Work Sans, sans-serif;
   color: var(--light-text-color);
 
---background-color: #4f374f;
---primary-color:#d9d9d9;
---black-text-color:  #000000;
---light-text-color:  #eeeeee;
+  --background-color: #4f374f;
+  --primary-color: #d9d9d9;
+  --black-text-color: #000000;
+  --light-text-color: #eeeeee;
 
---active-tab-color: #6D9CD5;
+  --active-tab-color: #6d9cd5;
 
---linkedin-color: #007BB6;
---stroke-color: rgba(0, 0, 0, 0.25);
+  --linkedin-color: #007bb6;
+  --stroke-color: rgba(0, 0, 0, 0.25);
 
-/* --second-color: #ababab;
+  /* --second-color: #ababab;
 --third-color:#584257 ;
 --fourth-color: rgba(0, 0, 0, 0.534);
 --fifth-color:  rgba(0, 0, 0, 0.438);
