@@ -107,6 +107,16 @@
   text-shadow: -1px -1px 0 var(--stroke-color), 1px -1px 0 var(--stroke-color),
     -1px 1px 0 var(--stroke-color), 1px 1px 0 var(--stroke-color);
 }
+
+.linksContainer {
+  display: flex;
+  align-items: center;
+}
+
+.linkedin {
+  height: 1.2rem;
+}
+
 @media (max-width: 550px) {
   .header {
     width: auto;
