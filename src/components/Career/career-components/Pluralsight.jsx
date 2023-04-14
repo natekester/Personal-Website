@@ -12,7 +12,7 @@ function Pluralsight() {
   );
 
   const pluralsightDesc =
-    'My team has created tooling to provide an entirely custom assessment experience. I have had the opportunity to train every member of my team, implement new documentation practices, testing patterns, and push sustainable clean code practices.';
+    'At Pluralsight I have created tooling to provide an entirely custom assessment experience. I enjoyed the opportunity to train every member of my team, implement new documentation practices, testing patterns, and push sustainable clean code practices.';
 
   return (
     <TimelineSegment
