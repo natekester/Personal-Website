@@ -12,7 +12,7 @@ function AWS() {
   );
 
   const AWSDesc =
-    'I now have experience creating solutions with Lambdas, api gateways, cognito, dynamodb, IAM, S3, cloudformation and EC2 instances. I have a clear understanding of how Cloud can be utilized, the multitude of uses, and the costs associated';
+    'I am experienced creating solutions with Lambdas, api gateways, cognito, dynamodb, IAM, S3, cloudformation and EC2 instances. I have a clear understanding of how Cloud can be utilized, the multitude of uses, and the costs associated';
 
   return (
     <TimelineSegment
