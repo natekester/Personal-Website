@@ -1,12 +1,7 @@
 import React from 'react';
 import TricksyHobbits from './components/404/TricksyHobbitses';
 import AboutMe from './components/AboutMe/AboutMe';
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from 'react-router-dom';
+import { HashRouter, Route, Routes, Navigate } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Career from './components/Career/Career';
 import Education from './components/Education/Education';
@@ -14,7 +9,7 @@ import Projects from './components/Projects/Projects';
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <Header />
       <Routes>
         <Route exact path="/about-me" element={<AboutMe />} />
@@ -24,7 +19,7 @@ function App() {
 
         <Route path="*" element={<Navigate to="/about-me" replace />} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 
