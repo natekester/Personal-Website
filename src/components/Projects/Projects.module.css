@@ -7,7 +7,10 @@
 }
 .youtubeVideo {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-content: center;
-  height: 50vh;
+  height: 53vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
