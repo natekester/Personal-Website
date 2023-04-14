@@ -10,7 +10,7 @@ function GitHubButton() {
     >
       <img src="github.png" className={styles.githubLogo} />
 
-      <h1>See This Websites Github</h1>
+      <h1 className={styles.text}>See This Websites Github</h1>
     </a>
   );
 }
