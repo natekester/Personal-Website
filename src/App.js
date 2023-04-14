@@ -1,5 +1,4 @@
 import React from 'react';
-import TricksyHobbits from './components/404/TricksyHobbitses';
 import AboutMe from './components/AboutMe/AboutMe';
 import { HashRouter, Route, Routes, Navigate } from 'react-router-dom';
 import Header from './components/Header/Header';
