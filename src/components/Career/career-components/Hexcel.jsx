@@ -8,7 +8,7 @@ function Hexcel() {
   );
 
   const hexcelDesc =
-    'At Hexcel the Engineers had the goal of creating aerospace parts and becoming more efficient. I built stringent quality practices, and implemented python statistical analyses to evaluate hundreds of processes in order to direct our team to areas of improvement.';
+    'At Hexcel I had the goal of creating quality aerospace parts and making processes more efficient. I built stringent quality practices, and implemented python statistical analyses to evaluate hundreds of processes in order to direct our team to areas of improvement.';
 
   return (
     <TimelineSegment
