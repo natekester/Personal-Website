@@ -6,5 +6,5 @@ h1 {
 .Education {
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
+  padding-top: 3vh;
 }
