@@ -12,7 +12,7 @@ function AWS() {
   );
 
   const AWSDesc =
-    'Using “A Cloud Guru” course provided me with a deeper and hands on experience understanding how Cloud can be utilized, the costs associated, and to be a better developer';
+    'I gained a hands on experience creating Lambdas, utilizing api gateways, cognito, dynamodb, IAM, S3, and EC2 instances. I have a clear understanding of how Cloud can be utilized, the multitude of uses, and the costs associated';
 
   return (
     <TimelineSegment
