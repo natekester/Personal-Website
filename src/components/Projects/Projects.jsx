@@ -1,6 +1,7 @@
 import React from 'react';
 import Title from '../shared-components/Title';
 import styles from './Projects.module.css';
+import ReactPlayer from 'react-player';
 
 function Projects() {
   return (
@@ -21,6 +22,14 @@ function Projects() {
         data to the user. I’ve learned a lot since making this, but I think it
         still holds merit.
       </h4>
+      <div className={styles.youtubeVideo}>
+        <ReactPlayer
+          className="player"
+          width="80%"
+          height="100%"
+          url="https://www.youtube.com/watch?v=I0eGY5WpmKs?autoplay=1&mute=1"
+        />
+      </div>
     </div>
   );
 }

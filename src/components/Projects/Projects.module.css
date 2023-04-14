@@ -5,3 +5,9 @@
 .Projects {
   padding-top: 4vh;
 }
+.youtubeVideo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 50vh;
+}
