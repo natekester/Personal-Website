@@ -1,3 +1,4 @@
+import GitHubButton from '../shared-components/GitHubButton';
 import Title from '../shared-components/Title';
 import styles from './AboutMe.module.css';
 import React from 'react';
@@ -33,6 +34,9 @@ function AboutMe() {
           As for hobbies - I love 3D printing, photography, and have recently
           found a passion for learning music and guitar.
         </h4>
+        <div className={styles.githubContainer}>
+          <GitHubButton />
+        </div>
       </div>
     </div>
   );

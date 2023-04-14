@@ -20,6 +20,12 @@
 .text {
   margin-right: 5vw;
 }
+.githubContainer {
+  display: flex;
+  margin-top: 10vh;
+  align-items: center;
+  justify-content: center;
+}
 
 .myFace {
   display: block;
