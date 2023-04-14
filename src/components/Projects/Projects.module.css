@@ -18,6 +18,15 @@
   /* margin-left: 20vw; */
   /* margin-right: 20vw; */
 }
+.titleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-start;
+  align-self: flex-start;
+  gap: 5vw;
+  margin-left: 11vw;
+  margin-right: 5vw;
+}
 
 @media (max-width: 840px) {
   .youtubeVideo {

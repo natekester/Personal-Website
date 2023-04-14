@@ -1,3 +1,8 @@
+.aboutmeTop {
+  flex-direction: column;
+  padding-top: 5vh;
+}
+
 .aboutMe {
   display: flex;
   flex-grow: 1;
@@ -12,6 +17,8 @@
   flex-direction: row;
   align-items: center;
   gap: 5vw;
+  margin-left: 1rem;
+  margin-right: 3rem;
 }
 .awsLogo {
   height: 10vh;
@@ -57,6 +64,9 @@
   .myFace {
     height: 20vh;
     margin-bottom: 0;
+  }
+  .githubContainer {
+    margin-top: 2vh;
   }
 }
 

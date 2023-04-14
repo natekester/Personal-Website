@@ -1,11 +1,9 @@
-h1 {
-  margin-left: 10vw;
-  margin-top: 2vh;
-  margin-bottom: 0;
-  align-self: flex-start;
-}
 .Education {
   display: flex;
   flex-direction: column;
   padding-top: 3vh;
+}
+
+.titleContainer {
+  margin-left: 10vw;
 }

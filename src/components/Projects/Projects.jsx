@@ -7,7 +7,10 @@ import GitHubButton from '../shared-components/GitHubButton';
 function Projects() {
   return (
     <div className={styles.Projects}>
-      <Title className={styles.title} title="This Web Page!"  />
+      <div className={styles.titleContainer}>
+        <Title className={styles.title} title="This Web Page!" />
+      </div>
+
       <h4 className={styles.text}>
         {' '}
         I made this page in React after creating a Figma for it. I am hosting
@@ -16,7 +19,11 @@ function Projects() {
         a simple proof of backend knowledge.{' '}
       </h4>
       <GitHubButton />
-      <Title className={styles.title} title="CS50 Course Capstone" />
+
+      <div className={styles.titleContainer}>
+        <Title className={styles.title} title="CS50 Course Capstone" />
+      </div>
+
       <h4 className={styles.text}>
         {' '}
         This is a very old project that utilized React and Django with jwts to
