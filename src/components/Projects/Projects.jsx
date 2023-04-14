@@ -2,6 +2,7 @@ import React from 'react';
 import Title from '../shared-components/Title';
 import styles from './Projects.module.css';
 import ReactPlayer from 'react-player';
+import GitHubButton from '../shared-components/GitHubButton';
 
 function Projects() {
   return (
@@ -14,6 +15,7 @@ function Projects() {
         connected to a server-less backend for an api gateway and lambda just as
         a simple proof of backend knowledge.{' '}
       </h4>
+      <GitHubButton />
       <Title title="CS50 Course Capstone" />
       <h4 className={styles.text}>
         {' '}

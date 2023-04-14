@@ -1,0 +1,30 @@
+.GitHubButton {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: var(--light-text-color);
+  background: #5a5a5a;
+  border-width: 0px 1px 1px 0px;
+  border-style: solid;
+
+  border-radius: 20px;
+  font-size: small;
+
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: 5px solid #000000;
+
+  width: fit-content;
+  margin-bottom: 1vh;
+
+  text-decoration: none;
+  padding: 15px;
+}
+.githubLogo {
+  height: 6vh;
+}
