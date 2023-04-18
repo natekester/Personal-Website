@@ -40,9 +40,12 @@
   width: auto;
 
   margin: auto;
-  height: 25vh;
+  width: 25vh;
   align-items: center;
   justify-content: center;
+  border-radius: 100%;
+  border: 1px solid var(--light-text-color);
+  margin: 2rem;
 }
 
 .textContainer {
@@ -62,8 +65,9 @@
     margin-left: 1rem;
   }
   .myFace {
-    height: 20vh;
+    width: 20vh;
     margin-bottom: 0;
+    margin-top: 0vh;
   }
   .githubContainer {
     margin-top: 2vh;

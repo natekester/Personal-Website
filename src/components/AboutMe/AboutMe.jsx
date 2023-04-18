@@ -9,7 +9,7 @@ function AboutMe() {
       <div className={styles.aboutMe}>
         <img
           className={styles.myFace}
-          src="myfaceEdit.png"
+          src="myface2023.png"
           alt="A picture of what I look like. "
         />
         <div className={styles.textContainer}>
