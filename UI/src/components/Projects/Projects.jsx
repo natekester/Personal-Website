@@ -5,6 +5,9 @@ import ReactPlayer from 'react-player';
 import GitHubButton from '../shared-components/GitHubButton';
 
 function Projects() {
+
+
+  
   return (
     <div className={styles.Projects}>
       <div className={styles.titleContainer}>
