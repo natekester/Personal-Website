@@ -1,6 +1,3 @@
-# Welcome to my personal website! 
-I've included my yarn.lock and .nvmrc to make it easy to pull down and run if you so chose. 
-
 
 ## Notes of repo:
 Yarn.lock, .nvmrc, and package.json should enable you to collect and run the node modules used in this project. 
