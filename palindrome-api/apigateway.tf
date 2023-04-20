@@ -22,7 +22,6 @@ resource "aws_api_gateway_resource" "resource" {
 }
 
 resource "aws_api_gateway_method" "method" {
-  #checkov:skip=CKV_AWS_59:This method is an unauthorized passthrough for sake of targeted learning
   rest_api_id   = aws_api_gateway_rest_api.api.id
   resource_id   = aws_api_gateway_resource.resource.id
   http_method   = "GET"
@@ -163,7 +162,7 @@ resource "aws_api_gateway_integration_response" "options_integration_response" {
   http_method = aws_api_gateway_method.options_method.http_method
   status_code = aws_api_gateway_method_response.options_200.status_code
 
-  #eventurally I turn on the CORS to only my website
+  #eventually I turn on the CORS to only my website
   response_parameters = {
     "method.response.header.Access-Control-Allow-Headers" = "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'",
     "method.response.header.Access-Control-Allow-Methods" = "'GET,OPTIONS,POST,PUT'",
