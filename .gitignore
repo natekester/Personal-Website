@@ -269,3 +269,13 @@ yarn-error.log*
 
 #aws stuff
 .aws-sam/
+
+variables*.tf*
+.terraform
+.checkov.yml
+terraform.tfstate*
+Makefile
+*.zip
+.terraform*
+plan*
+hashicorp

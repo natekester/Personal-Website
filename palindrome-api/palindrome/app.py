@@ -1,4 +1,5 @@
 import json
+import boto3
 
 
 def palindrome_lambda_handler(event, context):
