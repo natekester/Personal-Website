@@ -246,6 +246,7 @@ $RECYCLE.BIN/
 
 # dependencies
 /node_modules
+UI/node_modules
 /.pnp
 .pnp.js
 
@@ -265,3 +266,6 @@ $RECYCLE.BIN/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+#aws stuff
+.aws-sam/

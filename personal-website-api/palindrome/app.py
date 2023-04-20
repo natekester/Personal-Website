@@ -2,7 +2,6 @@ import json
 
 
 def palindrome_lambda_handler(event, context):
-    print(event, 1111)
     is_palindrome = "there was no word"
     if event.get('queryStringParameters'):
         if event.get('queryStringParameters').get('word'):
