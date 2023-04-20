@@ -11,7 +11,6 @@ resource "aws_cloudwatch_log_group" "api" {
   retention_in_days = 90
 }
 
-
 resource "aws_api_gateway_rest_api" "api" {
   name = var.project_name
 }
@@ -29,7 +28,6 @@ resource "aws_api_gateway_method" "method" {
   http_method   = "GET"
   authorization = "NONE"
 }
-
 
 resource "aws_api_gateway_method_settings" "method_settigs" {
   rest_api_id = aws_api_gateway_rest_api.api.id
@@ -55,9 +53,6 @@ resource "aws_api_gateway_method_response" "method_response" {
   depends_on = [aws_api_gateway_method.method]
 }
 
-
-
-
 resource "aws_api_gateway_integration" "lambda_trigger" {
   rest_api_id = aws_api_gateway_rest_api.api.id
   resource_id = aws_api_gateway_resource.resource.id
@@ -78,9 +73,8 @@ resource "aws_lambda_permission" "apigw_lambda" {
   # More: http://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-control-access-using-iam-policies-to-invoke-api.html
   source_arn = "arn:aws:execute-api:${var.region}:${data.aws_caller_identity.current.account_id}:${aws_api_gateway_rest_api.api.id}/*/${aws_api_gateway_method.method.http_method}${aws_api_gateway_resource.resource.path}"
 }
-#
+
 resource "aws_api_gateway_stage" "api_stage" {
-  #checkov:skip=CKV_AWS_120:Intentionally not enabling caching because each instance has only one intented user
   deployment_id        = aws_api_gateway_deployment.deployment.id
   rest_api_id          = aws_api_gateway_rest_api.api.id
   stage_name           = "api"
@@ -122,7 +116,6 @@ resource "aws_api_gateway_deployment" "deployment" {
 
 
 resource "aws_api_gateway_method" "options_method" {
-  #checkov:skip=CKV_AWS_59:This method is an unauthorized passthrough for sake of targeted learning
   rest_api_id   = aws_api_gateway_rest_api.api.id
   resource_id   = aws_api_gateway_resource.resource.id
   http_method   = "OPTIONS"
@@ -169,6 +162,8 @@ resource "aws_api_gateway_integration_response" "options_integration_response" {
   resource_id = aws_api_gateway_resource.resource.id
   http_method = aws_api_gateway_method.options_method.http_method
   status_code = aws_api_gateway_method_response.options_200.status_code
+
+  #eventurally I turn on the CORS to only my website
   response_parameters = {
     "method.response.header.Access-Control-Allow-Headers" = "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'",
     "method.response.header.Access-Control-Allow-Methods" = "'GET,OPTIONS,POST,PUT'",
