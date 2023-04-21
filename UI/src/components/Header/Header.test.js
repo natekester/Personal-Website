@@ -1,10 +1,10 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { BrowserRouter, Router } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import Header from './Header';
 
-test('makes sure that the page generally loads', async () => {
+test('make sure the headers are there', async () => {
   render(<Header />, { wrapper: BrowserRouter });
 
   expect(screen.getByText('Nate Kester')).toBeInTheDocument();
