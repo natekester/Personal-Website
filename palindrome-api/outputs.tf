@@ -7,6 +7,9 @@ output "aws_bucket_name" {
 }
 
 
-output "project_trigger_command" {
-  value = "curl -X ${aws_api_gateway_method.method.http_method} ${aws_api_gateway_stage.api_stage.invoke_url}/${aws_api_gateway_resource.resource.path_part}"
+output "check_CORS_OPERATION" {
+  value = "curl -v -X OPTIONS ${aws_api_gateway_stage.api_stage.invoke_url}/${aws_api_gateway_resource.resource.path_part}"
+}
+output "test_api_gateway_up" {
+  value = " pytest palindrome-api/tests/integration/test_api_gateway.py"
 }

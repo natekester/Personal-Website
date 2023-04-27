@@ -270,6 +270,7 @@ yarn-error.log*
 #aws stuff
 .aws-sam/
 
+#terraform stuff
 variables*.tf*
 .terraform
 .checkov.yml
@@ -279,3 +280,6 @@ Makefile
 .terraform*
 plan*
 hashicorp
+
+#selenium logs
+geckodriver.log
