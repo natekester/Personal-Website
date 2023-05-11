@@ -8,8 +8,14 @@ output "aws_bucket_name" {
 
 
 output "check_CORS_OPERATION" {
-  value = "curl -v -X OPTIONS ${aws_api_gateway_stage.api_stage.invoke_url}/${aws_api_gateway_resource.resource.path_part}"
+  value = "curl -v -X OPTIONS ${aws_api_gateway_stage.api_stage.invoke_url}/${aws_api_gateway_resource.resource.path_part}?word=word"
 }
+
 output "test_api_gateway_up" {
-  value = " pytest palindrome-api/tests/integration/test_api_gateway.py"
+  value = "pytest palindrome-api/tests/integration/test_api_gateway.py"
+}
+
+resource "local_file" "palindrome_url" {
+  content  = "${aws_api_gateway_stage.api_stage.invoke_url}/${aws_api_gateway_resource.resource.path_part}"
+  filename = "palindrom_url.yaml"
 }
