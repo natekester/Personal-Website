@@ -6,8 +6,3 @@ resource "aws_s3_bucket" "public_bucket" {
 
 }
 
-# resource "aws_s3_bucket_acl" "public_bucket" {
-#   bucket = aws_s3_bucket.public_bucket.id
-#   acl    = "private"
-# }
-

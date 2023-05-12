@@ -21,6 +21,9 @@ function Projects() {
         connected to a server-less backend for an api gateway and lambda just as
         a simple proof of backend knowledge.{' '}
       </h4>
+
+      <Palindrome />
+
       <GitHubButton />
 
       <div className={styles.titleContainer}>
