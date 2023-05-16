@@ -6,6 +6,7 @@ import Career from './components/Career/Career';
 import Education from './components/Education/Education';
 import Projects from './components/Projects/Projects';
 
+
 function App() {
   return (
     <HashRouter>

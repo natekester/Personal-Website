@@ -3,11 +3,9 @@ import Title from '../shared-components/Title';
 import styles from './Projects.module.css';
 import ReactPlayer from 'react-player';
 import GitHubButton from '../shared-components/GitHubButton';
+import Palindrome from './Palindrome';
 
 function Projects() {
-
-
-  
   return (
     <div className={styles.Projects}>
       <div className={styles.titleContainer}>
@@ -16,10 +14,11 @@ function Projects() {
 
       <h4 className={styles.text}>
         {' '}
-        I made this page in React after creating a Figma for it. I am hosting
-        this site on AWS. As I add to it, you’ll see more. I plan to have this
-        connected to a server-less backend for an api gateway and lambda just as
-        a simple proof of backend knowledge.{' '}
+        I made this page in React and am hosting it on S3. It goes through AWS
+        Route 53/Cloudfront with a TLS cert. I have setup a serverless backend
+        api-gateway lambda deployed using Terraform to show proof of knowledge.
+        It checks if a word is a palindrome, i.e. if it’s the same forward and
+        reverse. Try it out!{' '}
       </h4>
 
       <Palindrome />
