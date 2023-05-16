@@ -33,7 +33,7 @@ function Palindrome() {
           className={styles.input}
           onChange={(e) => setWord(e.target.value)}
           type="text"
-          maxLength="20"
+          maxLength="19"
           placeholder="check if word is palindrome"
         />
 

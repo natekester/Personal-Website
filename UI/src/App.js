@@ -6,8 +6,14 @@ import Career from './components/Career/Career';
 import Education from './components/Education/Education';
 import Projects from './components/Projects/Projects';
 
-
 function App() {
+  // when in prod, don't be outputting to console.
+  if (process.env.NODE_ENV === 'production') {
+    console.log = () => {};
+    console.error = () => {};
+    console.debug = () => {};
+  }
+
   return (
     <HashRouter>
       <Header />

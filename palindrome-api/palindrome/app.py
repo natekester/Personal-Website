@@ -18,6 +18,7 @@ def palindrome_lambda_handler(event, context):
                     "message": "you must send the 'word' query parameter with less than 20 characters",
                 }
             ),
+            "headers": {"Access-Control-Allow-Origin": "https://natekester.com"},
         }
 
     flipped_word = word[::-1]
