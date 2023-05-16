@@ -6,7 +6,6 @@ import GitHubButton from '../shared-components/GitHubButton';
 import Palindrome from './Palindrome';
 
 function Projects() {
-  console.log(' change!')
   return (
     <div className={styles.Projects}>
       <div className={styles.titleContainer}>
