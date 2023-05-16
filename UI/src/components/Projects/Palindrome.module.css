@@ -32,6 +32,8 @@ input[type='reset'] {
 
   font-size: medium;
   margin-left: 1rem;
+  text-shadow: -1px -1px 0 var(--stroke-color), 1px -1px 0 var(--stroke-color),
+    -1px 1px 0 var(--stroke-color), 1px 1px 0 var(--stroke-color);
 }
 
 input {
