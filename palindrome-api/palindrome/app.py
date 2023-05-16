@@ -30,4 +30,5 @@ def palindrome_lambda_handler(event, context):
                 "isPalindrome": is_palindrome,
             }
         ),
+        "headers": {"Access-Control-Allow-Origin": "https://natekester.com"},
     }

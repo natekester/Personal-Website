@@ -8,8 +8,6 @@ function Palindrome() {
   const [word, setWord] = useState('');
   const [delayAPICall, setDelayAPICall] = useState(false);
 
-  console.log('AAAAAAA');
-
   useEffect(() => {
     //if they change the word, lets reset the answer
     setCallMade(false);
