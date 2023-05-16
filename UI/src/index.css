@@ -18,6 +18,10 @@ body,
   flex-flow: column;
 }
 
+h6 {
+  color: red;
+}
+
 h4 {
   font-weight: 500;
 }
@@ -36,12 +40,4 @@ h4 {
 
   --linkedin-color: #007bb6;
   --stroke-color: rgba(0, 0, 0, 0.25);
-
-  /* --second-color: #ababab;
---third-color:#584257 ;
---fourth-color: rgba(0, 0, 0, 0.534);
---fifth-color:  rgba(0, 0, 0, 0.438);
---sixth-color: rgba(0, 0, 0, 0.438);
---button-colors:rgb(97, 196, 81);
---box-shadow: rgba(0, 0, 0, 0.438); */
 }
