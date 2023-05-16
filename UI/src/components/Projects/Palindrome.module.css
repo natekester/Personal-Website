@@ -1,0 +1,66 @@
+button,
+input[type='submit'],
+input[type='reset'] {
+  background: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: var(--light-text-color);
+  background: var(--active-tab-color);
+  border-width: 0px 1px 1px 0px;
+  border-style: solid;
+
+  border-radius: 10px;
+  font-size: small;
+
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  letter-spacing: 0.05em;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #000000;
+
+  width: fit-content;
+  margin-bottom: 1vh;
+
+  text-decoration: none;
+  justify-content: flex-start;
+  align-items: center;
+
+  font-size: medium;
+  margin-left: 1rem;
+}
+
+input {
+  height: 1.7rem;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  width: 40vw;
+}
+
+.palindromeContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputsContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.isPalindrome {
+  margin: 1rem;
+  display: flex;
+  align-self: center;
+}
+.isNotPalindrome {
+  margin: 1rem;
+  display: flex;
+  align-self: center;
+}
+.placeholder {
+  margin: 1.65rem;
+}
