@@ -1,7 +1,7 @@
 from playwright.sync_api import Playwright, sync_playwright
 
 
-def run(playwright: Playwright) -> None:
+def run_recording_of_main_UI_items(playwright: Playwright) -> None:
     browser = playwright.chromium.launch(headless=True)
     context = browser.new_context()
     page = context.new_page()
@@ -64,12 +64,13 @@ def run(playwright: Playwright) -> None:
     page.get_by_placeholder("check if word is palindrome").fill("testset")
     page.wait_for_timeout(550)
     page.get_by_role("button", name="Call Lambda").click()
-    page.get_by_text("testset is a palindrome! 😎").click()
+    page.get_by_text("testset is a palindrome! ").click(timeout=1500)
 
     # ---------------------
     context.close()
     browser.close()
 
 
-with sync_playwright() as playwright:
-    run(playwright)
+def test_playwrite_main():
+    with sync_playwright() as playwright:
+        run_recording_of_main_UI_items(playwright)
