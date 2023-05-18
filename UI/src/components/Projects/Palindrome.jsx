@@ -51,6 +51,7 @@ function Palindrome() {
           Call Lambda
         </button>
       </div>
+      {error ? <div className={styles.isNotPalindrome}>{error}</div> : ''}
       {callMade ? (
         isPalindrome ? (
           <p className={styles.isPalindrome}>
@@ -64,7 +65,6 @@ function Palindrome() {
       ) : (
         <div className={styles.placeholder}></div>
       )}
-      <div className={styles.isNotPalindrome}>{error}</div>
     </div>
   );
 }
