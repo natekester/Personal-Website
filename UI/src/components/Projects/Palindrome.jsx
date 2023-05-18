@@ -27,8 +27,11 @@ function Palindrome() {
           setDelayAPICall(false);
         }, 500);
       }
+      if (word === '') {
+        setError('you need to input a word before calling');
+      }
     } catch (e) {
-      setError(e.message);
+      setError('something went wrong calling the lambda, please try again');
     }
   };
 
@@ -61,7 +64,7 @@ function Palindrome() {
       ) : (
         <div className={styles.placeholder}></div>
       )}
-      <p>{error}</p>
+      <div className={styles.isNotPalindrome}>{error}</div>
     </div>
   );
 }
