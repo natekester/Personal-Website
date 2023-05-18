@@ -7,6 +7,7 @@ function Palindrome() {
   const [callMade, setCallMade] = useState(false);
   const [word, setWord] = useState('');
   const [delayAPICall, setDelayAPICall] = useState(false);
+  const [error, setError] = useState('');
 
   useEffect(() => {
     //if they change the word, lets reset the answer
@@ -14,15 +15,20 @@ function Palindrome() {
   }, [word]);
 
   const checkIsPalindrome = async () => {
-    if (!delayAPICall && !callMade && word) {
-      const response = await callPalindrome(word);
-      setCallMade(true);
-      setPalindrome(response.isPalindrome);
-      //by default api-gateway rate limits. doesnt hurt to slow down.
-      setDelayAPICall(true);
-      setTimeout(() => {
-        setDelayAPICall(false);
-      }, 500);
+    try {
+      if (!delayAPICall && !callMade && word) {
+        setError('');
+        const response = await callPalindrome(word);
+        setCallMade(true);
+        setPalindrome(response.isPalindrome);
+        //by default api-gateway rate limits. doesnt hurt to slow down.
+        setDelayAPICall(true);
+        setTimeout(() => {
+          setDelayAPICall(false);
+        }, 500);
+      }
+    } catch (e) {
+      setError(e.message);
     }
   };
 
@@ -55,6 +61,7 @@ function Palindrome() {
       ) : (
         <div className={styles.placeholder}></div>
       )}
+      <p>{error}</p>
     </div>
   );
 }
