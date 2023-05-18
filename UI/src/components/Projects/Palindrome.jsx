@@ -28,7 +28,7 @@ function Palindrome() {
         }, 500);
       }
       if (word === '') {
-        setError('you need to input a word before calling');
+        setError('please enter a word');
       }
     } catch (e) {
       setError('something went wrong calling the lambda, please try again');
