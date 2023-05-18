@@ -6,9 +6,7 @@ from palindrome import app
 
 
 @pytest.fixture()
-def apigw_event():
-    """Generates API GW Event"""
-
+def lambda_message_palindrome_false():
     return {
         "body": '{ "test": "body"}',
         "resource": "/{proxy+}",
@@ -62,10 +60,27 @@ def apigw_event():
     }
 
 
-def test_get_tables_lambda_handler(apigw_event):
-    res = app.palindrome_lambda_handler(apigw_event, "")
+@pytest.fixture()
+def lambda_message_palindrome(lambda_message_palindrome_false):
+    return {
+        **lambda_message_palindrome_false,
+        "queryStringParameters": {"word": "racecar"},
+    }
+
+
+def test_not_palindrome(lambda_message_palindrome_false):
+    res = app.palindrome_lambda_handler(lambda_message_palindrome_false, "")
     data = json.loads(res["body"])
 
     assert res["statusCode"] == 200
     assert "isPalindrome" in res["body"]
     assert data["isPalindrome"] == False
+
+
+def test_palindrome(lambda_message_palindrome):
+    res = app.palindrome_lambda_handler(lambda_message_palindrome, "")
+    data = json.loads(res["body"])
+
+    assert res["statusCode"] == 200
+    assert "isPalindrome" in res["body"]
+    assert data["isPalindrome"] == True
