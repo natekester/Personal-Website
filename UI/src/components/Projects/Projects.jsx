@@ -31,10 +31,10 @@ function Projects() {
 
       <h4 className={styles.text}>
         {' '}
-        This is a very old project that utilized React and Django with jwts to
-        make an app that keeps track of manufacturing scrap and displays cost
-        data to the user. I’ve learned a lot since making this, but I think it
-        still holds merit.
+        This is a very old CRUD project that utilized React and Django with jwts
+        to make an app that keeps track of manufacturing scrap and displays cost
+        data to the user. It's also on my github. I’ve learned a lot since
+        making this, but I think it still holds merit.
       </h4>
       <div className={styles.youtubeVideo}>
         <ReactPlayer
