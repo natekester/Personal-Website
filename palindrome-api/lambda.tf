@@ -15,6 +15,8 @@ resource "aws_lambda_function" "palindrome_lambda" {
 
   role = aws_iam_role.role.arn
 
+  //minimum you can set timeout is 1 second...
+  timeout = 1
 
   environment {
     variables = {
@@ -22,4 +24,6 @@ resource "aws_lambda_function" "palindrome_lambda" {
       S3_REGION = var.region
     }
   }
+
+
 }

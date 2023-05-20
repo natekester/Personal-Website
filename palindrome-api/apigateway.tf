@@ -34,8 +34,10 @@ resource "aws_api_gateway_method_settings" "method_settigs" {
   method_path = "*/*"
 
   settings {
-    metrics_enabled = true
-    logging_level   = "INFO"
+    metrics_enabled        = true
+    logging_level          = "INFO"
+    throttling_burst_limit = 5
+    throttling_rate_limit  = 2
   }
 }
 
@@ -61,6 +63,8 @@ resource "aws_api_gateway_integration" "lambda_trigger" {
   integration_http_method = "POST"
   type                    = "AWS_PROXY"
   uri                     = aws_lambda_function.palindrome_lambda.invoke_arn
+
+  depends_on = [aws_api_gateway_method.method, aws_lambda_function.palindrome_lambda]
 }
 
 resource "aws_lambda_permission" "apigw_lambda" {
@@ -125,7 +129,6 @@ resource "aws_api_gateway_method_response" "options_200" {
   resource_id = aws_api_gateway_resource.resource.id
   http_method = aws_api_gateway_method.options_method.http_method
   status_code = 200
-
 
   response_models = {
     "application/json" = "Empty"
