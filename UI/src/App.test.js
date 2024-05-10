@@ -30,7 +30,7 @@ test('Check that Each page renders when clicking the text', async () => {
   const careerNav = screen.getByText('Career');
   await userEvent.click(careerNav);
   expect(
-    screen.getByText('Software Engineer II (Remote) - Pluralsight')
+    screen.getByText('Software Engineer III (Remote) - Pluralsight')
   ).toBeInTheDocument();
 
   //check Educationpage Renders

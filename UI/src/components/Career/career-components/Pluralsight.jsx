@@ -18,7 +18,7 @@ function Pluralsight() {
     <TimelineSegment
       time="Feb 2021 - Present"
       imageElement={pluralsightImg}
-      title="Software Engineer II (Remote) - Pluralsight"
+      title="Software Engineer III (Remote) - Pluralsight"
       description={pluralsightDesc}
     ></TimelineSegment>
   );
