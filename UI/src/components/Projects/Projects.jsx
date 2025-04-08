@@ -16,9 +16,9 @@ function Projects() {
         {' '}
         I made this page in React and am hosting it on S3. It goes through AWS
         Route 53/Cloudfront with a TLS cert. I have setup a serverless backend
-        api-gateway lambda deployed using Terraform to show proof of general
+        api-gateway lambda with Dynamodb deployed using Terraform to show proof of general
         backend knowledge. It checks if a word is a palindrome, i.e. if it’s the
-        same forward and reverse. Try it out!{' '}
+        same forward and reverse and how many times others have found that palindrome. Try it out!{' '}
       </h4>
 
       <Palindrome />

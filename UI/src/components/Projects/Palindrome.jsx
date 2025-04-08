@@ -8,6 +8,7 @@ function Palindrome() {
   const [word, setWord] = useState('');
   const [delayAPICall, setDelayAPICall] = useState(false);
   const [error, setError] = useState('');
+  const [count, setCount] = useState(null);
 
   useEffect(() => {
     //if they change the word, lets reset the answer
@@ -21,6 +22,7 @@ function Palindrome() {
         const response = await callPalindrome(word);
         setCallMade(true);
         setPalindrome(response.isPalindrome);
+        setCount(response.count);
         //by default api-gateway rate limits. doesnt hurt to slow down.
         setDelayAPICall(true);
         setTimeout(() => {
@@ -56,6 +58,9 @@ function Palindrome() {
         isPalindrome ? (
           <p className={styles.isPalindrome}>
             <q>{word}</q> &nbsp; is a palindrome! 😎
+            {count > 1
+              ? `  It has been checked on this website ${count} times already!`
+              : '  That is the first time anyone has input that Palindrome!'}
           </p>
         ) : (
           <p className={styles.isNotPalindrome}>

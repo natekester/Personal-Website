@@ -6,6 +6,11 @@ output "aws_bucket_name" {
   value = aws_s3_bucket.public_bucket.bucket
 }
 
+output "dynamodb" {
+  value = aws_dynamodb_table.basic-dynamodb-table.name
+}
+
+
 
 output "check_CORS_OPERATION" {
   value = "curl -v -X OPTIONS ${aws_api_gateway_stage.api_stage.invoke_url}/${aws_api_gateway_resource.resource.path_part}?word=word"

@@ -4,7 +4,7 @@ export async function callPalindrome(word) {
   const lowerCaseWord = word.toLowerCase();
   const api =
     process.env.NODE_ENV === 'development'
-      ? localPalindromeApi
+      ? prodPalindromeApi
       : prodPalindromeApi;
   const url = `${api}?word=${lowerCaseWord}`;
 

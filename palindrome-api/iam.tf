@@ -84,6 +84,9 @@ data "aws_iam_policy_document" "lambda" {
   }
 }
 #
+
+
+#
 resource "aws_iam_role_policy_attachment" "s3" {
   role       = aws_iam_role.role.name
   policy_arn = aws_iam_policy.s3.arn
@@ -124,3 +127,8 @@ data "aws_iam_policy_document" "s3" {
   }
 }
 
+
+resource "aws_iam_role_policy_attachment" "lambda_dynamoroles" {
+  role       = aws_iam_role.role.name
+  policy_arn = "arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess"
+}
