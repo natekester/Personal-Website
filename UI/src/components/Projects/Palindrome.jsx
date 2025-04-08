@@ -45,7 +45,7 @@ function Palindrome() {
           onChange={(e) => setWord(e.target.value)}
           type="text"
           maxLength="19"
-          placeholder="check if word is palindrome"
+          placeholder="example: racecar"
         />
 
         <button className={styles.button} onClick={checkIsPalindrome}>
